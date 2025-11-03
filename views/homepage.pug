@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1 Custom Object Records
+    a(href="/update-cobj") Add New Record
+    table(border="1", cellpadding="8")
+      thead
+        tr
+          th ID
+          th Name
+          th Type
+          th Age
+      tbody
+        each item in data
+          tr
+            td= item.id
+            td= item.name
+            td= item.type
+            td= item.age
